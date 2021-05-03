@@ -1,0 +1,1368 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"door",
+				"Doorstop"
+			],
+			[
+				"hover",
+				"hovered_region\tstatement"
+			],
+			[
+				"hoverre",
+				"hovered_regions\tstatement"
+			],
+			[
+				"Doorstopfin",
+				"DoorstopFindItemInputHandler\tclass"
+			],
+			[
+				"doorstop_add",
+				"doorstop_add_link\tdoorstop"
+			],
+			[
+				"sublim",
+				"sublime_plugin\tmodule"
+			],
+			[
+				"_doo",
+				"_doorstop\tfunction"
+			],
+			[
+				"relati",
+				"relative_to\tfunction"
+			],
+			[
+				"refere",
+				"reference\tparam"
+			],
+			[
+				"DoorstopR",
+				"DoorstopGotoReferenceCommand\tclass"
+			],
+			[
+				"Do",
+				"DoorstopReferencesListener\tclass"
+			],
+			[
+				"doo",
+				"doorstop_plugin_api\tmodule"
+			],
+			[
+				"refer",
+				"reference\tstatement"
+			],
+			[
+				"dmp",
+				"dumps\tfunction"
+			],
+			[
+				"def",
+				"default_flow_style\tparam"
+			],
+			[
+				"jso",
+				"json_result\tstatement"
+			],
+			[
+				"doorstoppytint",
+				"doorstop_python_interpreter"
+			],
+			[
+				"Sett",
+				"Settings\tmodule"
+			],
+			[
+				"Argu",
+				"ArgumentParser\tclass"
+			],
+			[
+				"check_",
+				"check_output\tfunction"
+			],
+			[
+				"subl",
+				"sublime\tmodule"
+			],
+			[
+				"Doorstoc",
+				"DoorstopCopyReferenceCommand"
+			],
+			[
+				"sele",
+				"selected_text\tstatement"
+			],
+			[
+				"Doo",
+				"doorstop\tmodule"
+			],
+			[
+				"g",
+				"getLogger\tfunction"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "image_paste.py",
+			"settings":
+			{
+				"buffer_size": 944,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stuffs/test.py",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n    \"path\": \"\",\n    \"name_prefix\": \"\",\n    \"paste_prefix\": \"\",\n    \"paste_postfix\": \"\"\n}",
+			"settings":
+			{
+				"buffer_size": 90,
+				"line_ending": "Unix",
+				"name": "image-paste"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"add re",
+				"Doorstop: Add reference"
+			],
+			[
+				"addre",
+				"Doorstop: Add reference"
+			],
+			[
+				"fildele",
+				"File: Delete"
+			],
+			[
+				"addi",
+				"Doorstop: Add item"
+			],
+			[
+				"doorogo",
+				"Doorstop: GoTo item"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"add",
+				"Doorstop: Add item"
+			],
+			[
+				"add li",
+				"Doorstop: Add link"
+			],
+			[
+				"add i",
+				"Doorstop: Add item"
+			],
+			[
+				"add it",
+				"Doorstop: Add item"
+			],
+			[
+				"add link",
+				"Doorstop: Add link"
+			],
+			[
+				"add lin",
+				"Doorstop: Add link"
+			],
+			[
+				"add l",
+				"Doorstop: Add link"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"addli",
+				"Doorstop: Add link"
+			],
+			[
+				"addlin",
+				"Doorstop: Add link"
+			],
+			[
+				"addl",
+				"Doorstop: Add link"
+			],
+			[
+				"gotan",
+				"Doorstop: GoTo any link"
+			],
+			[
+				"goto",
+				"Doorstop: GoTo any link"
+			],
+			[
+				"gotoc",
+				"Doorstop: GoTo child"
+			],
+			[
+				"gotl",
+				"Doorstop: GoTo link"
+			],
+			[
+				"dooradd",
+				"Doorstop: Add item"
+			],
+			[
+				"dooaddi",
+				"Doorstop: Add item"
+			],
+			[
+				"crea",
+				"Doorstop: Create reference"
+			],
+			[
+				"gotoch",
+				"Doorstop: GoTo child"
+			],
+			[
+				"gotopa",
+				"Doorstop: GoTo parent"
+			],
+			[
+				"go",
+				"Doorstop: GoTo child"
+			],
+			[
+				"goch",
+				"Doorstop: GoTo child"
+			],
+			[
+				"doorstgo",
+				"Doorstop: GoTo parent"
+			],
+			[
+				"doorst",
+				"Doorstop: GoTo parent"
+			],
+			[
+				"blac",
+				"Sublack: Format file"
+			],
+			[
+				"black",
+				"Sublack: Format file"
+			],
+			[
+				"cre",
+				"Doorstop: Create reference"
+			],
+			[
+				"got",
+				"Doorstop: GoTo reference"
+			],
+			[
+				"dooropad",
+				"Doorstop: Add item"
+			],
+			[
+				"bla",
+				"Sublack: Format file"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ad",
+				"Doorstop: Add item"
+			],
+			[
+				"doorad",
+				"Doorstop: Add item"
+			],
+			[
+				"doorsad",
+				"Doorstop: Add item"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"doocre",
+				"Doorstop: Create reference"
+			],
+			[
+				"bl",
+				"Sublack: Format file"
+			],
+			[
+				"d",
+				"Doorstop: Debug"
+			],
+			[
+				"deb",
+				"Doorstop: Debug"
+			],
+			[
+				"doors",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"debu",
+				"Doorstop: Debug"
+			],
+			[
+				"c",
+				"Doorstop: Create reference"
+			],
+			[
+				"doo",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"doos",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"refer",
+				"Doorstop: Create reference"
+			],
+			[
+				"door",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"sp",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"doorsp",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"spec",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"speci",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"doosrsp",
+				"Doorstop: Specify interpreter"
+			],
+			[
+				"doorstcop",
+				"Doorstop: Copy reference"
+			],
+			[
+				"doorstopco",
+				"Doorstop: Copy reference"
+			],
+			[
+				"creat",
+				"Doorstop: Create reference"
+			],
+			[
+				"doorcrea",
+				"Doorstop: Create reference"
+			],
+			[
+				"doocrea",
+				"Doorstop: Create reference"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"tost",
+				"View: Toggle Status Bar"
+			],
+			[
+				"doorco",
+				"Doorstop: Copy reference"
+			],
+			[
+				"copre",
+				"Doorstop: Copy reference"
+			],
+			[
+				"con",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"convsp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remop",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"ay",
+				"ayu: Activate theme"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 318.0,
+		"history":
+		[
+			"dir(toet)",
+			"toet = {'a': 'b'}",
+			"toet",
+			"toet = {*{'a': 'b'}}",
+			"toet = {**{'a': 'b'}}",
+			"toet = **{'a': 'b'}",
+			"view.window().extract_variables()",
+			"self.view.window().extract_variables()",
+			"view.get_regions(\"bloeb\")",
+			"toet.rindex(\"d\")",
+			"toet.rindex(\"a\")",
+			"toet = \"bla\"",
+			"view.find(toet, 0)",
+			"toet = re.escape(\"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):\")",
+			"re.escape(\"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):\")",
+			"import re",
+			"view.find(r\"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):\", 0)",
+			"view.find(\"class DoorstopReferencesListener\\(sublime_plugin.ViewEventListener\\):\", 0)",
+			"view.find(\"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):\", 0)",
+			"view.find(\"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):\")",
+			"class DoorstopReferencesListener(sublime_plugin.ViewEventListener):",
+			"view.find(\"not keyword:\", 0)",
+			"view.find(\"not keyword\", 0)",
+			"view.style()",
+			"toet.stem",
+			"dir(toet)",
+			"toet.suffix",
+			"toet.name",
+			"dir(toet)",
+			"toet.base",
+			"path.base",
+			"toet = Path(view.file_name())",
+			"from pathlib import Path",
+			"view.file_name()",
+			"view.extract_completions('bl')",
+			"view.extract_completions()",
+			"view.symbols()",
+			"view.symbols",
+			"view.extract_scope(0)",
+			"view.extract_scope()",
+			"view.extract_scope",
+			"dir(view)",
+			"view.get_regions('')",
+			"view.get_regions(None)",
+			"view.get_regions()",
+			"dir(view)",
+			"view",
+			"view.window().find_open_file(\"README.md\")",
+			"view.window().find_open_file(\"__init__.py\")",
+			"view.window().show_quick_panel(['toet', 'blaat'], None)",
+			"view.window().panels()",
+			"view.window().open_file(\"REQ005.yml\")",
+			"enumerate(toet)",
+			"toet.enum()",
+			"toet.enumerate()",
+			"iterate(toet)",
+			"toet.iterate()",
+			"toet.itemize()",
+			"toet = [1, 2, 3, 4]",
+			"view.sel().add(sublime.Region(0, 0))",
+			"view.sel().clear()",
+			"view.sel().add(sublime.Region(0, 0))",
+			"view.sel().add(Region(0, 0))",
+			"dir(view.sel())",
+			"view.sel().regions",
+			"view.sel()",
+			"import yaml",
+			"view.find_all(r\"^- .*\")",
+			"view.find_all(r\"^- \\w*\")",
+			"view.find_all(r\"^- \\w+\")",
+			"dir(toet)",
+			"toet[0]",
+			"toet",
+			"toet = view.find_all(r\"^references:$\")[0]",
+			"view.find_all(r\"^references:$\")",
+			"view.find_all(r\"^\\w+\")",
+			"view.find_all(r\"^\\S+\")",
+			"view.find_all(r\"^references:$\")",
+			"view.find_all(r\"^references\")",
+			"view.find_all(r\"references\")",
+			"view.find_all(r\"references.*file\")",
+			"view.find_all(\"references(.*)file\")",
+			"view.find_all(\"references(.*)file)",
+			"view.find_all(\"references(.*)reviewed\")",
+			"view.find_all(\"references:(.*)reviewed\")",
+			"view.find_all(\"references:(.*?)reviewed\")",
+			"view.find_all(\"references:\")",
+			"view.find_all(r\"$references\")",
+			"view.find_all(\"$references\")",
+			"view.find_all(\"references\")",
+			"dir(view.settings())",
+			"view.settings().get(\"doorstop_python_interpreter\")",
+			"view.settings().erase(\"doorstop_python_interpreter\")",
+			"view.settings().get(\"doorstop_python_interpreter\")",
+			"view.settings().erase(\"doorstop_python_interpreter\")",
+			"view.settings().del(\"doorstop_python_interpreter\")",
+			"view.settings().settings_id",
+			"dir(view.settings())",
+			"view.settings()",
+			"bloeb.get('settings.doorstop_python_interpreter')",
+			"bloeb.get('settings.Doorstop.doorstop_python_interpreter')",
+			"bloeb.get('Doorstop.doorstop_python_interpreter')",
+			"bloeb.get('doorstop_python_interpreter')",
+			"bloeb.settings_id",
+			"bloeb.get('bloeb')",
+			"bloeb.get('blaat')",
+			"bloeb = view.settings()",
+			"settings.settings_id",
+			"len(settings)",
+			"dir(settings)",
+			"settings.get('bloeb')",
+			"settings = view.settings()",
+			"settings.get('bloeb')",
+			"settings",
+			"settings.set(\"bloeb\", \"toet\")",
+			"settings = view.settings()",
+			"view.settings()",
+			"view.run_command(\"doorstop_copy_reference\")",
+			"self.view.run_command(\"doorstop_copy_reference\")",
+			"view.run_command(\"doorstop\")"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/image-paste",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/image-paste/stuffs"
+	],
+	"file_history":
+	[
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR009.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR013.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR004.yml",
+		"/Users/beer/Development/doorstop-plugin.sublime-project",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR010.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/README.md",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop.sublime-commands",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR001.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR012.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR008.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR016.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ020.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR007.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR011.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR005.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR002.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ002.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR006.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR015.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/notes/NOTE004.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ009.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ014.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ011.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ018.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ022.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ003.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ004.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ005.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ007.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ008.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ010.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ001.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ023.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR014.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/notes/NOTE001.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/notes/NOTE003.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ013.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/notes/NOTE002.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ012.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ019.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_plugin.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ006.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/scr/SCR003.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ016.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_util.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ015.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/REQ017.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_plugin_api/settings.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_cli/doorstop_cli.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV003.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_events.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV005.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV002.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV001.yml",
+		"/Users/beer/Library/Caches/pypoetry/virtualenvs/example-jiotQEQZ-py3.9/lib/python3.9/site-packages/doorstop/core/reference_finder.py",
+		"/Users/beer/Library/Caches/pypoetry/virtualenvs/example-jiotQEQZ-py3.9/lib/python3.9/site-packages/doorstop/core/item.py",
+		"/Users/beer/Library/Caches/pypoetry/virtualenvs/example-jiotQEQZ-py3.9/lib/python3.9/site-packages/doorstop/core/publisher.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/Doorstop.sublime-settings",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV006.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/reqv/REQV004.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/REQ005.yml",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_plugin_api/references.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/Packages/doorstop/doorstop.sublime-commands",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/Packages/doorstop/doorstop_plugin.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/docs/req/doorstop_plugin.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_plugin_api/__init__.py",
+		"/Applications/Sublime",
+		"/Applications/Sublime Text.app/Contents/MacOS/sublime.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/Text.app/Contents/MacOS/sublime.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop_api/__init__.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/doorstop/doorstop/doorstop_get_documents.py",
+		"/Users/beer/Library/Application Support/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/Users/beer/Development/example/docs/us/US004.yml",
+		"/Users/beer/Development/example/docs/us/US003.yml",
+		"/Users/beer/Development/example/docs/us/US002.yml",
+		"/Users/beer/Development/example/example/__init__.py",
+		"/Users/beer/Development/example/tests/test_example.py",
+		"/Users/beer/Development/example/docs/dsg/DSG001.yml",
+		"/Users/beer/Development/example/docs/req/REQ001.yml",
+		"/Users/beer/Development/example/docs/us/US001.yml",
+		"/Users/beer/Development/example/docs/us/US005.yml",
+		"/Users/beer/Development/example/docs/us/US006.yml",
+		"/Users/beer/Development/example/docs/us/US007.yml",
+		"/Users/beer/Development/example/docs/us/US008.yml",
+		"/Users/beer/Development/Deviot/start_listener.py",
+		"/Users/beer/Development/Deviot/api/deviot.py",
+		"/Users/beer/Development/Deviot/platformio/project_recognition.py",
+		"/Users/beer/Development/Deviot/libraries/project_check.py",
+		"/Users/beer/Development/Deviot/libraries/mdns/mdns.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/tools/miniterm.py",
+		"/Users/beer/Development/Deviot/libraries/file.py",
+		"/Users/beer/Development/Deviot/libraries/mdns/six.py",
+		"/Users/beer/Development/Deviot/commands/deviot_set_password.py",
+		"/Users/beer/Development/Deviot/commands/deviot_pio_structure.py",
+		"/Users/beer/Development/Deviot/commands/deviot_overwrite_upload_baud.py",
+		"/Users/beer/Development/Deviot/commands/close_pio_terminal.py",
+		"/Users/beer/Development/Deviot/commands/deviot_new_sketch.py",
+		"/Users/beer/Development/Deviot/platformio/pio_terminal.py",
+		"/Users/beer/Development/Deviot/platformio/pio_bridge.py",
+		"/Users/beer/Development/Deviot/platformio/command.py",
+		"/Users/beer/Development/Deviot/libraries/mdns/zeroconf.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/__init__.py",
+		"/Users/beer/Development/Deviot/libraries/mdns/enum/__init__.py",
+		"/Users/beer/Development/Deviot/libraries/readconfig/__init__.py",
+		"/Users/beer/Development/Deviot/platformio/clean.py",
+		"/Users/beer/Development/Deviot/commands/deviot_open_library_folder.py",
+		"/Users/beer/Development/Deviot/commands/deviot_open_ini_file.py",
+		"/Users/beer/Development/Deviot/commands/deviot_open_build_folder.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/serialutil.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/tools/list_ports_common.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/serialwin32.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/win32.py",
+		"/Users/beer/Development/Deviot/libraries/pyserial/serialposix.py",
+		"/Users/beer/Development/Deviot/setup.cfg",
+		"/Users/beer/Development/Deviot/libraries/top_menu.py",
+		"/Users/beer/Development/Deviot/libraries/preferences_bridge.py",
+		"/Users/beer/Development/Deviot/libraries/quick_menu.py",
+		"/Users/beer/Development/Deviot/libraries/I18n.py",
+		"/Users/beer/Development/Deviot/libraries/messages.py",
+		"/Users/beer/Development/Deviot/libraries/serial.py",
+		"/Users/beer/Development/Deviot/libraries/libraries.py",
+		"/Users/beer/Development/Deviot/libraries/tools.py",
+		"/Users/beer/Development/Deviot/libraries/reloader.py",
+		"/Users/beer/Development/Deviot/libraries/pane_management.py",
+		"/Users/beer/Development/Deviot/libraries/status_color.py",
+		"/Users/beer/Development/Deviot/beginning/install_pio.py",
+		"/Users/beer/Development/Deviot/beginning/update.py",
+		"/Users/beer/Development/Deviot/beginning/check_requirements.py"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "image_paste.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stuffs/test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 90,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15,
+								15
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/beer/Library/Application Support/Sublime Text 3/Packages/image-paste",
+							"show_definitions": true,
+							"syntax": "Packages/PackageDev/Package/Sublime Text Settings/Sublime Text Settings.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 113.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.deviot":
+	{
+		"height": 281.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "image-paste.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"scr001",
+				"docs/scr/SCR001.yml"
+			],
+			[
+				"dooc",
+				"doorstop_cli/doorstop_cli.py"
+			],
+			[
+				"doout",
+				"doorstop_util.py"
+			],
+			[
+				"scr009",
+				"docs/scr/SCR009.yml"
+			],
+			[
+				"scr",
+				"docs/scr/SCR009.yml"
+			],
+			[
+				"doorpl",
+				"doorstop_plugin.py"
+			],
+			[
+				"doorsoplu",
+				"doorstop_plugin.py"
+			],
+			[
+				"sc",
+				"docs/scr/SCR012.yml"
+			],
+			[
+				"comm",
+				"doorstop.sublime-commands"
+			],
+			[
+				"comma",
+				"doorstop.sublime-commands"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"doorut",
+				"doorstop_util.py"
+			],
+			[
+				"cli",
+				"doorstop_cli/doorstop_cli.py"
+			],
+			[
+				"comman",
+				"doorstop.sublime-commands"
+			],
+			[
+				"scr013",
+				"docs/scr/SCR013.yml"
+			],
+			[
+				"com",
+				"doorstop.sublime-commands"
+			],
+			[
+				"scr006",
+				"docs/scr/SCR006.yml"
+			],
+			[
+				"doorsopl.p",
+				"doorstop_plugin.py"
+			],
+			[
+				"req002",
+				"docs/req/REQ002.yml"
+			],
+			[
+				"req023",
+				"docs/req/REQ023.yml"
+			],
+			[
+				"req009",
+				"docs/req/REQ009.yml"
+			],
+			[
+				"scr015",
+				"docs/scr/SCR015.yml"
+			],
+			[
+				"not00",
+				"docs/notes/NOTE001.yml"
+			],
+			[
+				"scr014",
+				"docs/scr/SCR014.yml"
+			],
+			[
+				"REQ023",
+				"docs/req/REQ023.yml"
+			],
+			[
+				"req001",
+				"docs/req/REQ001.yml"
+			],
+			[
+				"req003",
+				"docs/req/REQ003.yml"
+			],
+			[
+				"scr008",
+				"docs/scr/SCR008.yml"
+			],
+			[
+				"req010",
+				"docs/req/REQ010.yml"
+			],
+			[
+				"scr010",
+				"docs/scr/SCR010.yml"
+			],
+			[
+				"sc008",
+				"docs/scr/SCR008.yml"
+			],
+			[
+				"scr012",
+				"docs/scr/SCR012.yml"
+			],
+			[
+				"scr005",
+				"docs/scr/SCR005.yml"
+			],
+			[
+				"scr004",
+				"docs/scr/SCR004.yml"
+			],
+			[
+				"req004",
+				"docs/req/REQ004.yml"
+			],
+			[
+				"req007",
+				"docs/req/REQ007.yml"
+			],
+			[
+				"req006",
+				"docs/req/REQ006.yml"
+			],
+			[
+				"req005",
+				"docs/req/REQ005.yml"
+			],
+			[
+				"req016",
+				"docs/req/REQ016.yml"
+			],
+			[
+				"req018",
+				"docs/req/REQ018.yml"
+			],
+			[
+				"req015",
+				"docs/req/REQ015.yml"
+			],
+			[
+				"req014",
+				"docs/req/REQ014.yml"
+			],
+			[
+				"req011",
+				"docs/req/REQ011.yml"
+			],
+			[
+				"req017",
+				"docs/req/REQ017.yml"
+			],
+			[
+				"util",
+				"doorstop_util.py"
+			],
+			[
+				"doocl",
+				"doorstop_cli/doorstop_cli.py"
+			],
+			[
+				"doorseve",
+				"doorstop_events.py"
+			],
+			[
+				"doorstop_util.py",
+				"doorstop_util.py"
+			],
+			[
+				"reqv003",
+				"docs/reqv/REQV003.yml"
+			],
+			[
+				"reqv001",
+				"docs/reqv/REQV001.yml"
+			],
+			[
+				"req",
+				"docs/req/REQ001.yml"
+			],
+			[
+				"reqv",
+				"docs/reqv/REQV002.yml"
+			],
+			[
+				"req5",
+				"docs/req/REQ005.yml"
+			],
+			[
+				"req9",
+				"docs/req/REQ009.yml"
+			],
+			[
+				"req012",
+				"docs/req/REQ012.yml"
+			],
+			[
+				"settin",
+				"doorstop_plugin_api/settings.py"
+			],
+			[
+				"refere",
+				"doorstop_plugin_api/references.py"
+			],
+			[
+				"re",
+				"docs/req/REQ003.yml"
+			],
+			[
+				"refer",
+				"doorstop_plugin_api/references.py"
+			],
+			[
+				"sett",
+				"doorstop_plugin_api/settings.py"
+			],
+			[
+				"req00",
+				"docs/req/REQ001.yml"
+			],
+			[
+				"req0",
+				"docs/req/REQ001.yml"
+			],
+			[
+				"002",
+				"docs/req/REQ002.yml"
+			],
+			[
+				"001",
+				"docs/req/REQ001.yml"
+			],
+			[
+				"us",
+				"docs/us/US001.yml"
+			],
+			[
+				"sta",
+				"start_listener.py"
+			],
+			[
+				"clea",
+				"platformio/clean.py"
+			],
+			[
+				"piobri",
+				"platformio/pio_bridge.py"
+			],
+			[
+				"pioter",
+				"platformio/pio_terminal.py"
+			],
+			[
+				"apde",
+				"api/deviot.py"
+			],
+			[
+				"devoplifo",
+				"commands/deviot_open_library_folder.py"
+			],
+			[
+				"devopinifi",
+				"commands/deviot_open_ini_file.py"
+			],
+			[
+				"devnew",
+				"commands/deviot_new_sketch.py"
+			],
+			[
+				"clos",
+				"commands/close_pio_terminal.py"
+			],
+			[
+				"opbui",
+				"commands/deviot_open_build_folder.py"
+			],
+			[
+				"devoverr",
+				"commands/deviot_overwrite_upload_baud.py"
+			],
+			[
+				"devpiostru",
+				"commands/deviot_pio_structure.py"
+			],
+			[
+				"devsetpa",
+				"commands/deviot_set_password.py"
+			],
+			[
+				"six.py",
+				"libraries/mdns/six.py"
+			],
+			[
+				"miniter",
+				"libraries/pyserial/tools/miniterm.py"
+			],
+			[
+				"serialwin",
+				"libraries/pyserial/serialwin32.py"
+			],
+			[
+				"win32",
+				"libraries/pyserial/win32.py"
+			],
+			[
+				"pyser__ini",
+				"libraries/pyserial/__init__.py"
+			],
+			[
+				"serposi",
+				"libraries/pyserial/serialposix.py"
+			],
+			[
+				"serialuti",
+				"libraries/pyserial/serialutil.py"
+			],
+			[
+				"topm",
+				"libraries/top_menu.py"
+			],
+			[
+				"projch",
+				"libraries/project_check.py"
+			],
+			[
+				"quick",
+				"libraries/quick_menu.py"
+			],
+			[
+				"preb",
+				"libraries/preferences_bridge.py"
+			],
+			[
+				"i18n",
+				"libraries/I18n.py"
+			],
+			[
+				"messag.py",
+				"libraries/messages.py"
+			],
+			[
+				"serial",
+				"libraries/serial.py"
+			],
+			[
+				"librar",
+				"libraries/libraries.py"
+			],
+			[
+				"tools",
+				"libraries/tools.py"
+			],
+			[
+				"reloader",
+				"libraries/reloader.py"
+			],
+			[
+				"panm",
+				"libraries/pane_management.py"
+			],
+			[
+				"stco",
+				"libraries/status_color.py"
+			],
+			[
+				"inpi",
+				"beginning/install_pio.py"
+			],
+			[
+				"checre",
+				"beginning/check_requirements.py"
+			],
+			[
+				"upda",
+				"beginning/update.py"
+			],
+			[
+				"set",
+				"setup.cfg"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 69.0,
+		"last_filter": "update_links_regions",
+		"selected_items":
+		[
+			[
+				"update_links_regions",
+				"update_links_regions"
+			],
+			[
+				"run_command",
+				"run_command"
+			],
+			[
+				"getpyto",
+				"get_python_version"
+			],
+			[
+				"dependencies_path",
+				"dependencies_path"
+			],
+			[
+				"set_logger_level",
+				"set_logger_level"
+			],
+			[
+				"File",
+				"File"
+			]
+		],
+		"width": 538.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "folder": "${file_path}",
+    "name_prefix": "",
+    // possible values for name_suffix:
+    // png, gif, jpeg, tiff
+    "name_suffix": "png",
+    "paste_prefix": "",
+    "paste_suffix": ""
+}
