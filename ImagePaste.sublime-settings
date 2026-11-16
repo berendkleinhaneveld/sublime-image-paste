@@ -1,0 +1,10 @@
+{
+    // Intercept paste in Markdown files when the clipboard holds an image.
+    "enabled": true,
+
+    // strftime format for the saved image's filename (without extension).
+    "filename_format": "image-%Y%m%d-%H%M%S",
+
+    // Alt text inserted in the Markdown image link.
+    "alt_text": ""
+}

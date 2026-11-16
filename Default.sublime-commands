@@ -1,0 +1,11 @@
+[
+    { "caption": "Image Paste: Paste Clipboard Image into Markdown", "command": "paste_markdown_image" },
+    {
+        "caption": "Preferences: Image Paste Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/ImagePaste/ImagePaste.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    }
+]
