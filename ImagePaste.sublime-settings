@@ -1,0 +1,16 @@
+{
+    // Intercept paste in Markdown files when the clipboard holds an image.
+    "enabled": true,
+
+    // Folder to save images in. Supports Sublime variables such as
+    // ${file_path} (folder of the Markdown file) and ${folder} (first project
+    // folder). Relative paths are relative to the Markdown file's folder.
+    // Created if it does not exist. Examples: "${file_path}/images", "assets".
+    "folder": "${file_path}",
+
+    // strftime format for the saved image's filename (without extension).
+    "filename_format": "image-%Y%m%d-%H%M%S",
+
+    // Alt text inserted in the Markdown image link.
+    "alt_text": ""
+}

@@ -1,70 +1,145 @@
+"""Paste clipboard images into Markdown files (macOS).
+
+When a paste happens in a Markdown view and the clipboard holds an image but
+no text, the image is saved next to the Markdown file and a Markdown image
+link is inserted at the cursor.
+"""
+
+import os
 import subprocess
-from datetime import datetime
-from pathlib import Path
+import time
+import urllib.parse
 
 import sublime
 import sublime_plugin
 
+SETTINGS_FILE = "ImagePaste.sublime-settings"
 
-def plugin_loaded():
+# AppleScript that writes the clipboard image (as PNG) to the path in argv.
+# Exits with an error when the clipboard has no image data.
+_SAVE_PNG_SCRIPT = """
+on run argv
+    set outPath to item 1 of argv
+    set imgData to the clipboard as «class PNGf»
+    set fh to open for access (POSIX file outPath) with write permission
+    try
+        set eof of fh to 0
+        write imgData to fh
+        close access fh
+    on error errMsg
+        close access fh
+        error errMsg
+    end try
+end run
+"""
+
+
+def _settings():
+    return sublime.load_settings(SETTINGS_FILE)
+
+
+def _is_markdown(view):
+    return view.match_selector(0, "text.html.markdown")
+
+
+def _destination_folder(view, settings):
+    """Resolve the ``folder`` setting to an absolute directory.
+
+    Supports Sublime variables such as ``${file_path}`` and ``${folder}``.
+    Relative results are taken relative to the Markdown file's folder.
     """
-    Hook that is called by Sublime when plugin is loaded.
-    """
-    pass
+    file_dir = os.path.dirname(view.file_name())
+    pattern = settings.get("folder") or "${file_path}"
+    window = view.window()
+    variables = window.extract_variables() if window else {}
+    variables.setdefault("file_path", file_dir)
+    # Without an open project there is no ${folder}; don't let it expand to "".
+    variables.setdefault("folder", file_dir)
+    folder = sublime.expand_variables(pattern, variables)
+    folder = os.path.expanduser(folder)
+    return os.path.normpath(os.path.join(file_dir, folder))
 
 
-def plugin_unloaded():
-    """
-    Hook that is called by Sublime when plugin is unloaded.
-    """
-    for key in list(globals().keys()):
-        if "imagepaste" in key.lower():
-            del globals()[key]
+def _unique_path(folder, base, ext):
+    path = os.path.join(folder, base + ext)
+    counter = 1
+    while os.path.exists(path):
+        path = os.path.join(folder, "{}-{}{}".format(base, counter, ext))
+        counter += 1
+    return path
 
 
-class ImagePasteCommand(sublime_plugin.TextCommand):
+def save_clipboard_image(path):
+    """Write the clipboard image to ``path`` as PNG. Returns True on success."""
+    try:
+        result = subprocess.run(
+            ["osascript", "-e", _SAVE_PNG_SCRIPT, path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            timeout=10,
+        )
+    except (OSError, subprocess.TimeoutExpired) as exc:
+        print("ImagePaste: osascript failed:", exc)
+        return False
+
+    ok = result.returncode == 0 and os.path.isfile(path) and os.path.getsize(path) > 0
+    if not ok and os.path.exists(path):
+        os.remove(path)
+    return ok
+
+
+class PasteMarkdownImageCommand(sublime_plugin.TextCommand):
+    """Save the clipboard image next to the file and insert a link to it."""
+
     def run(self, edit):
-        settings = sublime.load_settings("image-paste.sublime-settings")
-        variables = self.view.window().extract_variables()
-
-        now = datetime.now()
-        almost_now = datetime(
-            year=now.year,
-            month=now.month,
-            day=now.day,
-            hour=now.hour,
-            minute=now.minute,
-            second=now.second,
-        )
-        name = almost_now.isoformat().replace(":", "-").replace("T", "-")
-
-        destination_folder = Path(
-            sublime.expand_variables(settings.get("folder"), variables)
-        )
-        if not destination_folder.is_dir():
-            print(
-                "Could not paste image: "
-                "destination is not a folder: {}".format(destination_folder)
-            )
+        file_name = self.view.file_name()
+        if not file_name:
+            sublime.status_message("ImagePaste: save the Markdown file first")
             return
 
-        destination = destination_folder / "{}{}.{}".format(
-            settings.get("name_prefix"), name, settings.get("name_suffix")
-        )
+        file_dir = os.path.dirname(file_name)
+        settings = _settings()
+        folder = _destination_folder(self.view, settings)
+        base = time.strftime(settings.get("filename_format", "image-%Y%m%d-%H%M%S"))
 
-        command = ["pngpaste", str(destination)]
+        view = self.view
 
-        file = Path(variables.get("file_path"))
-        relative_path = destination.relative_to(file)
-        text_to_insert = "{}{}{}".format(
-            settings.get("paste_prefix"),
-            str(relative_path),
-            settings.get("paste_suffix"),
-        )
+        def work():
+            try:
+                os.makedirs(folder, exist_ok=True)
+            except OSError as exc:
+                sublime.status_message("ImagePaste: cannot create " + folder)
+                print("ImagePaste: cannot create folder:", exc)
+                return
+            path = _unique_path(folder, base, ".png")
+            if not save_clipboard_image(path):
+                sublime.status_message("ImagePaste: clipboard contains no image")
+                return
+            rel = os.path.relpath(path, file_dir).replace(os.sep, "/")
+            link = "![{}]({})".format(
+                settings.get("alt_text", ""), urllib.parse.quote(rel)
+            )
+            sublime.set_timeout(
+                lambda: view.run_command("insert", {"characters": link}), 0
+            )
+            sublime.status_message("ImagePaste: saved " + os.path.basename(path))
 
-        try:
-            subprocess.check_output(command)
-            for region in self.view.sel():
-                self.view.insert(edit, region.begin(), text_to_insert)
-        except subprocess.CalledProcessError:
-            print("Paste failed. Was there no image in the clipboard?")
+        sublime.set_timeout_async(work, 0)
+
+
+class ImagePasteListener(sublime_plugin.EventListener):
+    """Redirect regular pastes in Markdown to the image paste command when the
+    clipboard holds no text (e.g. a screenshot)."""
+
+    def on_text_command(self, view, command_name, args):
+        if command_name != "paste":
+            return None
+        if sublime.platform() != "osx":
+            return None
+        if not _settings().get("enabled", True):
+            return None
+        if not _is_markdown(view):
+            return None
+        if sublime.get_clipboard():
+            return None  # Text on the clipboard: normal paste.
+        return ("paste_markdown_image", {})

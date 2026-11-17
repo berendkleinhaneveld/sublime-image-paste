@@ -1,34 +1,34 @@
-# Image Paste
+# ImagePaste
 
-Sublime Text plugin for pasting images from the clipboard. Utilizes the
-[pngpaste](https://github.com/jcsalterego/pngpaste) utility for the pasting
-functionality, because the clipboard within Sublime only supports strings:
-no binary data. So that's why this plugin is currently macOS only.
+Sublime Text plugin (macOS) for pasting images into Markdown.
 
-## Usage
+Take a screenshot to the clipboard (e.g. `⌘⇧⌃4`), then press `⌘V` in a Markdown
+file. The image is saved as a PNG (by default in the same folder as the
+Markdown file) and a link like `![](image-20261116-142501.png)` is inserted at
+the cursor.
 
-Use the command: 'image-paste: Paste image' (Default key-binding set to
-CMD+OPTION+V) to paste the image. Use the settings to adjust the destination
-and the string that will be inserted into the text.
-Make sure that the folder into which you've configured the plugin to
-paste the image already exists.
+Text pastes behave as usual: the plugin only takes over when the clipboard
+holds no text. The Markdown file must be saved first so the plugin knows where
+to put the image.
+
+## Install
+
+```sh
+ln -s "$PWD" ~/Library/Application\ Support/Sublime\ Text/Packages/ImagePaste
+```
 
 ## Settings
 
-Use the `folder` setting to configure where to store the image.
-`${folder}` will be substituted with the currently opened folder.
-`${file_path}` will be substituted with the folder that contains
-the currently opened file (default setting).
-Use the `paste_prefix` and `paste_suffix` settings to specify a prefix
-and a suffix for the text that will be inserted into the current view.
+`Preferences: Image Paste Settings` from the command palette:
 
-Valid values for `name_suffix` are: `png`, `gif`, `jpeg` and `tiff`,
-which determines the output format.
+- `enabled` — turn the paste interception on/off
+- `folder` — where to save images (default `${file_path}`, the Markdown
+  file's folder). Supports Sublime variables like `${file_path}` and
+  `${folder}`; relative paths are relative to the Markdown file. The folder is
+  created if needed, e.g. `"${file_path}/images"`
+- `filename_format` — strftime pattern for the image filename
+- `alt_text` — alt text for the inserted link
 
-## Prerequisites
+## License
 
-`pngpaste` needs to be installed:
-
-```sh
-brew install pngpaste
-```
+MIT — see [LICENSE](LICENSE).
