@@ -42,6 +42,24 @@ def _is_markdown(view):
     return view.match_selector(0, "text.html.markdown")
 
 
+def _destination_folder(view, settings):
+    """Resolve the ``folder`` setting to an absolute directory.
+
+    Supports Sublime variables such as ``${file_path}`` and ``${folder}``.
+    Relative results are taken relative to the Markdown file's folder.
+    """
+    file_dir = os.path.dirname(view.file_name())
+    pattern = settings.get("folder") or "${file_path}"
+    window = view.window()
+    variables = window.extract_variables() if window else {}
+    variables.setdefault("file_path", file_dir)
+    # Without an open project there is no ${folder}; don't let it expand to "".
+    variables.setdefault("folder", file_dir)
+    folder = sublime.expand_variables(pattern, variables)
+    folder = os.path.expanduser(folder)
+    return os.path.normpath(os.path.join(file_dir, folder))
+
+
 def _unique_path(folder, base, ext):
     path = os.path.join(folder, base + ext)
     counter = 1
@@ -79,18 +97,25 @@ class PasteMarkdownImageCommand(sublime_plugin.TextCommand):
             sublime.status_message("ImagePaste: save the Markdown file first")
             return
 
-        folder = os.path.dirname(file_name)
+        file_dir = os.path.dirname(file_name)
         settings = _settings()
+        folder = _destination_folder(self.view, settings)
         base = time.strftime(settings.get("filename_format", "image-%Y%m%d-%H%M%S"))
-        path = _unique_path(folder, base, ".png")
 
         view = self.view
 
         def work():
+            try:
+                os.makedirs(folder, exist_ok=True)
+            except OSError as exc:
+                sublime.status_message("ImagePaste: cannot create " + folder)
+                print("ImagePaste: cannot create folder:", exc)
+                return
+            path = _unique_path(folder, base, ".png")
             if not save_clipboard_image(path):
                 sublime.status_message("ImagePaste: clipboard contains no image")
                 return
-            rel = os.path.relpath(path, folder).replace(os.sep, "/")
+            rel = os.path.relpath(path, file_dir).replace(os.sep, "/")
             link = "![{}]({})".format(
                 settings.get("alt_text", ""), urllib.parse.quote(rel)
             )
