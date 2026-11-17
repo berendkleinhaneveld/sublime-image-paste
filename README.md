@@ -23,3 +23,7 @@ ln -s "$PWD" ~/Library/Application\ Support/Sublime\ Text/Packages/ImagePaste
 - `enabled` — turn the paste interception on/off
 - `filename_format` — strftime pattern for the image filename
 - `alt_text` — alt text for the inserted link
+
+## License
+
+MIT — see [LICENSE](LICENSE).
